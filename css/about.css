@@ -1,0 +1,202 @@
+/* 
+ * Project Allecc - About Page CSS
+ * Contains styles specific to the about page
+ */
+
+/* ======== About Content Section ======== */
+.about-content {
+    padding: 100px 0;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.about-section:nth-child(even) {
+    direction: rtl;
+}
+
+.about-section:nth-child(even) .about-text {
+    direction: ltr;
+}
+
+.about-image img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: var(--gray-color);
+    font-size: 1.1rem;
+}
+
+/* ======== Team Section ======== */
+.team-section {
+    padding: 100px 0;
+    background-color: #f1f1f1;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.team-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.team-member:hover .team-image img {
+    transform: scale(1.05);
+}
+
+.team-info {
+    padding: 30px;
+}
+
+.team-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.team-info .position {
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.team-info p {
+    color: var(--gray-color);
+    margin-bottom: 20px;
+}
+
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.team-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    color: var(--gray-color);
+    transition: var(--transition);
+}
+
+.team-social a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* ======== Awards Section ======== */
+.awards-section {
+    padding: 100px 0;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.award-item {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.award-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.award-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.award-item h3 {
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.award-item p {
+    color: var(--gray-color);
+    font-size: 0.9rem;
+}
+
+/* ======== Responsive Styles ======== */
+@media (max-width: 1024px) {
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-section:nth-child(even) {
+        direction: ltr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+}

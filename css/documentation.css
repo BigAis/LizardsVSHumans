@@ -1,0 +1,239 @@
+/* 
+ * Project Allecc - Documentation Page CSS
+ * Contains styles specific to the documentation page
+ */
+
+/* ======== Docs Container ======== */
+.docs-container {
+    padding: 80px 0;
+    min-height: 70vh;
+}
+
+.docs-wrapper {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+}
+
+/* ======== Docs Sidebar ======== */
+.docs-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.docs-menu {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.docs-menu-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+}
+
+.docs-menu-content {
+    padding: 20px;
+}
+
+.docs-menu ul {
+    list-style: none;
+}
+
+.docs-menu ul li {
+    margin-bottom: 15px;
+}
+
+.docs-menu .menu-title {
+    font-weight: bold;
+    color: var(--dark-color);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.docs-menu ul li a {
+    padding: 8px 15px;
+    display: block;
+    color: var(--gray-color);
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.docs-menu ul li a:hover,
+.docs-menu ul li a.active {
+    background-color: rgba(106, 13, 173, 0.1);
+    color: var(--primary-color);
+}
+
+.docs-menu .submenu {
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.docs-menu .submenu li {
+    margin-bottom: 8px;
+}
+
+.docs-menu .submenu a {
+    padding: 5px 15px;
+    font-size: 0.95rem;
+}
+
+/* ======== Docs Content ======== */
+.docs-content {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+}
+
+.docs-section {
+    margin-bottom: 50px;
+}
+
+.docs-section:last-child {
+    margin-bottom: 0;
+}
+
+.docs-section h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.docs-section h3 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin: 30px 0 15px;
+}
+
+.docs-section h4 {
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    margin: 25px 0 15px;
+}
+
+.docs-section p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: var(--gray-color);
+}
+
+.docs-section ul,
+.docs-section ol {
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+.docs-section ul li,
+.docs-section ol li {
+    margin-bottom: 10px;
+    color: var(--gray-color);
+}
+
+.docs-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.docs-section table th,
+.docs-section table td {
+    border: 1px solid #eee;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.docs-section table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+.docs-section table td {
+    color: var(--gray-color);
+}
+
+.docs-section table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.docs-section .note {
+    background-color: rgba(48, 207, 208, 0.1);
+    border-left: 4px solid var(--secondary-color);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 0 5px 5px 0;
+}
+
+.docs-section .warning {
+    background-color: rgba(255, 94, 91, 0.1);
+    border-left: 4px solid var(--tertiary-color);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 0 5px 5px 0;
+}
+
+.docs-section img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.docs-section .code-block {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+.docs-section .key-binding {
+    display: inline-block;
+    background-color: #f1f1f1;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-family: monospace;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+.search-box {
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* ======== Responsive Styles ======== */
+@media (max-width: 1024px) {
+    .docs-wrapper {
+        grid-template-columns: 250px 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .docs-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .docs-sidebar {
+        position: static;
+        margin-bottom: 30px;
+    }
+    
+    .docs-content {
+        padding: 25px;
+    }
+}

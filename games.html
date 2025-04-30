@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games | Project Allecc</title>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/games.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">PROJECT ALLECC</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="games.html" class="active">Games</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="page-banner" style="background-image: url('images/games-bg.jpg');">
+            <div class="banner-content">
+                <h1>OUR GAMES</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>→</span>
+                    <span>Games</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="games-container">
+            <div class="container">
+                <div class="filter-bar">
+                    <div class="filter-categories">
+                        <button class="filter-button active">All</button>
+                        <button class="filter-button">Released</button>
+                        <button class="filter-button">Early Access</button>
+                        <button class="filter-button">Upcoming</button>
+                        <button class="filter-button">FPS</button>
+                        <button class="filter-button">TPS</button>
+                        <button class="filter-button">Racing</button>
+                        <button class="filter-button">RPG</button>
+                    </div>
+                    <div class="search-input">
+                        <input type="text" placeholder="Search games...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                
+                <div class="games-grid">
+                    <div class="game-card animate-on-scroll">
+                        <div class="game-image">
+                            <img src="images/game-banners/lizards-vs-humans-banner.jpg" alt="Lizards VS Humans">
+                            <div class="game-badge badge-released">Released</div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Lizards VS Humans</h3>
+                            <div class="game-tags">
+                                <span>FPS</span>
+                                <span>TPS</span>
+                                <span>Sci-Fi</span>
+                                <span>Multiplayer</span>
+                            </div>
+                            <p>An intense multiplayer shooter where two species battle for dominance. Choose your side in this epic conflict between advanced reptilians and resourceful humans.</p>
+                            <a href="lizards-vs-humans.html" class="btn btn-primary">Learn More</a>
+                            <div class="game-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>March 2024</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>2-32 Players</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8/5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card animate-on-scroll">
+                        <div class="game-image">
+                            <img src="images/game-banners/quantum-drift-banner.jpg" alt="Quantum Drift">
+                            <div class="game-badge badge-upcoming">Upcoming</div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Quantum Drift</h3>
+                            <div class="game-tags">
+                                <span>Racing</span>
+                                <span>Sci-Fi</span>
+                                <span>Time Manipulation</span>
+                            </div>
+                            <p>A high-octane racing game set in a cyberpunk future where drivers can manipulate time to gain advantage. Master temporal mechanics to become the ultimate racer.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <div class="game-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Q1 2026</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>1-16 Players</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Wishlist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card animate-on-scroll">
+                        <div class="game-image">
+                            <img src="images/game-banners/neon-shadows-banner.jpg" alt="Neon Shadows">
+                            <div class="game-badge badge-upcoming">Upcoming</div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Neon Shadows</h3>
+                            <div class="game-tags">
+                                <span>Stealth</span>
+                                <span>RPG</span>
+                                <span>Cyberpunk</span>
+                            </div>
+                            <p>A stealth-based RPG where you play as a digital ghost infiltrating corporate networks. Hack, sneak, and sabotage your way through a dystopian future.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <div class="game-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Q4 2025</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>Single Player</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Wishlist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card animate-on-scroll">
+                        <div class="game-image">
+                            <img src="images/game-banners/echoes-of-atlantis-banner.jpg" alt="Echoes of Atlantis">
+                            <div class="game-badge badge-early-access">Early Access</div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Echoes of Atlantis</h3>
+                            <div class="game-tags">
+                                <span>Adventure</span>
+                                <span>Exploration</span>
+                                <span>Underwater</span>
+                            </div>
+                            <p>An underwater adventure game exploring the mysteries of a lost civilization. Discover ancient technologies, solve puzzles, and uncover the truth of Atlantis.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <div class="game-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Q2 2025 (EA)</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>Single Player</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Wishlist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="page-navigation">
+                    <a href="#" class="page-link"><i class="fas fa-angle-left"></i></a>
+                    <a href="#" class="page-link active">1</a>
+                    <a href="#" class="page-link">2</a>
+                    <a href="#" class="page-link">3</a>
+                    <a href="#" class="page-link"><i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </section>
+        
+        <div class="section-divider" style="background-image: url('images/roadmap-bg.jpg');">
+            <h2>GAME DEVELOPMENT ROADMAP</h2>
+        </div>
+        
+        <section class="upcoming-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>UPCOMING RELEASES</h2>
+                    <div class="section-separator"></div>
+                    <p style="text-align: center; max-width: 700px; margin: 20px auto; color: var(--gray-color);">Here's a glimpse into our development pipeline. These titles are in various stages of production and subject to change as we refine our creative vision.</p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-content">
+                            <h3>Lizards VS Humans: Season 2</h3>
+                            <div class="timeline-date">Q3 2025</div>
+                            <p>The second season brings new maps, weapons, character classes, and a revolutionary progression system that evolves based on your playstyle.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-content">
+                            <h3>Echoes of Atlantis</h3>
+                            <div class="timeline-date">Q2 2025 (Early Access)</div>
+                            <p>Dive into the depths to explore a mysterious underwater civilization with ancient technology and dark secrets.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-content">
+                            <h3>Neon Shadows</h3>
+                            <div class="timeline-date">Q4 2025</div>
+                            <p>Infiltrate corporate networks as a digital ghost in this stealth-based RPG set in a cyberpunk future.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-content">
+                            <h3>Quantum Drift</h3>
+                            <div class="timeline-date">Q1 2026</div>
+                            <p>Race through a cyberpunk cityscape with the ability to manipulate time to gain the advantage over your competitors.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-content">
+                            <h3>Untitled Fantasy Project</h3>
+                            <div class="timeline-date">2026-2027</div>
+                            <p>A secret project that will take players to a realm where magic and technology coexist in delicate balance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>PROJECT ALLECC</h2>
+                    <p>Crafting unforgettable gaming experiences since 2023</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>NAVIGATION</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="games.html">Games</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>GAMES</h3>
+                        <ul>
+                            <li><a href="lizards-vs-humans.html">Lizards VS Humans</a></li>
+                            <li><a href="#">Coming Soon</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>SOCIAL</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Project Allecc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/games.js"></script>
+</body>
+</html>

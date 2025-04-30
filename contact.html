@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Project Allecc</title>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">PROJECT ALLECC</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="page-banner" style="background-image: url('images/contact-bg.jpg');">
+            <div class="banner-content">
+                <h1>CONTACT US</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>→</span>
+                    <span>Contact</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-container">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <p>We'd love to hear from you! Whether you have questions about our games, need technical support, or want to explore business opportunities, our team is ready to assist you.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-detail">
+                                    <h3>Our Location</h3>
+                                    <p>123 Game Studio Avenue, Athens, Greece</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-detail">
+                                    <h3>Email Us</h3>
+                                    <p><a href="mailto:info@projectallecc.com">info@projectallecc.com</a></p>
+                                    <p><a href="mailto:support@projectallecc.com">support@projectallecc.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-detail">
+                                    <h3>Call Us</h3>
+                                    <p><a href="tel:+306912345678">+30 691 234 5678</a> (General)</p>
+                                    <p><a href="tel:+306987654321">+30 698 765 4321</a> (Support)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-detail">
+                                    <h3>Working Hours</h3>
+                                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                    <p>Saturday: 10:00 AM - 2:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3>Connect With Us</h3>
+                        <div class="social-contact">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h2>Send Us A Message</h2>
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="inquiry">Inquiry Type</label>
+                                <select id="inquiry" name="inquiry">
+                                    <option value="general">General Information</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="feedback">Feedback & Suggestions</option>
+                                    <option value="business">Business & Partnerships</option>
+                                    <option value="careers">Careers & Employment</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            
+                            <div class="form-check">
+                                <label>
+                                    <input type="checkbox" name="newsletter" checked>
+                                    Subscribe to our newsletter for updates on new games and events
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>FREQUENTLY ASKED QUESTIONS</h2>
+                    <div class="section-separator"></div>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How can I report a bug in your games?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can report bugs through our support portal, which you can access via your game account or by emailing support@projectallecc.com. Please include as much information as possible, including screenshots or video recordings of the issue.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you offer game testing opportunities?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we regularly recruit players for beta testing upcoming games and major updates. Sign up for our newsletter or create an account on our website to be notified about testing opportunities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What platforms do your games support?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our games are currently available on PC (via Steam and Epic Games Store), PlayStation 5, PlayStation 4, Xbox Series X|S, and Xbox One. Mobile versions of select titles are in development.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How can I apply for a job at Project Allecc?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We post all open positions on the Careers section of our website. You can also send your portfolio and resume to careers@projectallecc.com even if there are no current openings that match your skills.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you offer internships or student programs?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer summer internships and year-round co-op programs for students pursuing degrees in game development, computer science, animation, and other relevant fields. Check our Careers page for current opportunities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I use your games for content creation?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! We encourage content creators to stream, record, and share gameplay from our titles. You're welcome to monetize this content on platforms like YouTube and Twitch, as long as you're following their respective terms of service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>PROJECT ALLECC</h2>
+                    <p>Crafting unforgettable gaming experiences since 2023</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>NAVIGATION</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="games.html">Games</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>GAMES</h3>
+                        <ul>
+                            <li><a href="lizards-vs-humans.html">Lizards VS Humans</a></li>
+                            <li><a href="#">Coming Soon</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>SOCIAL</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Project Allecc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+/* 
+ * Project Allecc - Games Page CSS
+ * Contains styles specific to the games listing page
+ */
+
+/* ======== Games Container ======== */
+.games-container {
+    padding: 100px 0;
+}
+
+/* ======== Filter Bar ======== */
+.filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filter-categories {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid #eee;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.filter-button:hover,
+.filter-button.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.search-input {
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 2px solid #eee;
+}
+
+.search-input input {
+    border: none;
+    padding: 10px 20px;
+    width: 250px;
+    outline: none;
+}
+
+.search-input button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+/* ======== Games Grid ======== */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.game-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    position: relative;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.game-image {
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.game-card:hover .game-image img {
+    transform: scale(1.05);
+}
+
+.game-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.badge-released {
+    background-color: var(--secondary-color);
+}
+
+.badge-upcoming {
+    background-color: var(--tertiary-color);
+}
+
+.badge-early-access {
+    background-color: #ffc107;
+}
+
+.game-info {
+    padding: 25px;
+}
+
+.game-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.game-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.game-tags span {
+    padding: 4px 12px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--gray-color);
+}
+
+.game-info p {
+    color: var(--gray-color);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.game-stats {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--gray-color);
+    font-size: 0.9rem;
+}
+
+/* ======== Pagination ======== */
+.page-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.page-navigation .page-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 5px;
+    color: var(--gray-color);
+    transition: var(--transition);
+    border: 1px solid #eee;
+}
+
+.page-navigation .page-link:hover,
+.page-navigation .page-link.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* ======== Section Divider ======== */
+.section-divider {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+.section-divider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--primary-color), rgba(48, 207, 208, 0.7));
+    opacity: 0.8;
+}
+
+.section-divider h2 {
+    color: white;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* ======== Upcoming Section ======== */
+.upcoming-section {
+    padding: 100px 0;
+    background-color: #f1f1f1;
+}
+
+/* ======== Timeline ======== */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    padding: 30px 0;
+    position: relative;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 5px solid var(--primary-color);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-content {
+    position: relative;
+    width: calc(50% - 40px);
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: calc(50% + 40px);
+}
+
+.timeline-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.timeline-date {
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.timeline-content p {
+    color: var(--gray-color);
+}
+
+/* ======== Responsive Styles ======== */
+@media (max-width: 1024px) {
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .search-input {
+        width: 100%;
+    }
+    
+    .search-input input {
+        width: 100%;
+    }
+    
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item::after {
+        left: 20px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 80px);
+        left: 60px !important;
+    }
+}
