@@ -9,6 +9,8 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/3d-effects.css">
 </head>
 <body>
     <header>
@@ -28,10 +30,12 @@
             </ul>
         </nav>
 
-        <div class="page-banner" style="background-image: url('images/about-bg.jpg');">
+        <div class="page-banner bg-3d-layers" style="background-image: url('images/about-bg.jpg');">
+            <div class="bg-layer bg-layer-1" style="background-image: url('images/about-bg.jpg');"></div>
+            <div class="bg-layer bg-layer-2" style="background-image: url('images/about-bg.jpg');"></div>
             <div class="banner-content">
-                <h1>ABOUT US</h1>
-                <div class="breadcrumb">
+                <h1 class="text-3d-simple fade-in-up">ABOUT US</h1>
+                <div class="breadcrumb fade-in-up delay-200">
                     <a href="index.html">Home</a>
                     <span>→</span>
                     <span>About Us</span>
@@ -43,24 +47,24 @@
     <main>
         <section class="about-content">
             <div class="container">
-                <div class="about-section animate-on-scroll">
-                    <div class="about-image">
-                        <img src="images/about/studio.jpg" alt="Project Allecc Studio">
+                <div class="about-section">
+                    <div class="about-image image-3d-container">
+                        <img src="images/about/studio.jpg" alt="Project Allecc Studio" class="image-3d">
                     </div>
-                    <div class="about-text">
-                        <h2>OUR STORY</h2>
+                    <div class="about-text fade-in-right">
+                        <h2 class="text-3d-simple">OUR STORY</h2>
                         <p>Project Allecc was founded in 2023 by two passionate gamers with a vision to create innovative gaming experiences that challenge conventions and push boundaries.</p>
                         <p>What started as a small indie studio in Athens, Greece, has grown into a dedicated team of developers, artists, and designers united by our love for games and commitment to quality.</p>
                         <p>Our name "Allecc" represents our core values: Artistry, Learning, Legacy, Excellence, Creativity, and Community. These principles guide every project we undertake and every game we create.</p>
                     </div>
                 </div>
                 
-                <div class="about-section animate-on-scroll">
-                    <div class="about-image">
-                        <img src="images/about/mission.jpg" alt="Project Allecc Mission">
+                <div class="about-section">
+                    <div class="about-image image-3d-container">
+                        <img src="images/about/mission.jpg" alt="Project Allecc Mission" class="image-3d">
                     </div>
-                    <div class="about-text">
-                        <h2>OUR MISSION</h2>
+                    <div class="about-text fade-in-left">
+                        <h2 class="text-3d-simple">OUR MISSION</h2>
                         <p>We believe games are more than just entertainment—they're powerful mediums for storytelling, connection, and expression. Our mission is to create memorable gaming experiences that resonate with players on both emotional and intellectual levels.</p>
                         <p>We strive to balance innovative gameplay mechanics with compelling narratives, ensuring every title we release offers something unique to the gaming landscape.</p>
                         <p>Community involvement is central to our development process. We actively engage with players throughout each stage of creation, from concept to post-launch support, ensuring our games evolve with the community's feedback.</p>
@@ -72,39 +76,69 @@
         <section class="team-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>MEET OUR TEAM</h2>
+                    <h2 class="text-3d-simple">MEET OUR TEAM</h2>
                     <div class="section-separator"></div>
                 </div>
                 
                 <div class="team-grid">
-                    <div class="team-member animate-on-scroll">
-                        <div class="team-image">
-                            <img src="images/team/ceo.jpg" alt="Ioannis Papadopoulos">
+                    <div class="team-member card-3d animate-on-scroll">
+                        <div class="card-front">
+                            <div class="team-image">
+                                <img src="images/team/ceo.jpg" alt="Ioannis Papadopoulos">
+                            </div>
+                            <div class="team-info">
+                                <h3>Ioannis Papadopoulos</h3>
+                                <span class="position">CEO & Creative Director</span>
+                                <p>With over 10 years of experience in game design, Ioannis leads our creative vision and studio operations.</p>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="team-info">
-                            <h3>Ioannis Papadopoulos</h3>
-                            <span class="position">CEO & Creative Director</span>
-                            <p>With over 10 years of experience in game design, Ioannis leads our creative vision and studio operations. His passion for innovative gameplay mechanics and compelling narratives drives our studio's direction.</p>
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
+                        <div class="card-back">
+                            <div class="team-info" style="padding: 30px; height: 100%; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+                                <h3>Ioannis Papadopoulos</h3>
+                                <span class="position" style="color: rgba(255,255,255,0.9);">CEO & Creative Director</span>
+                                <p style="color: rgba(255,255,255,0.9);">His passion for innovative gameplay mechanics and compelling narratives drives our studio's direction. Previously worked at major studios before founding Project Allecc.</p>
+                                <p style="color: rgba(255,255,255,0.9);">Education: Master's in Game Design from Athens Digital Arts University</p>
+                                <div class="team-social">
+                                    <a href="#" style="background: rgba(255,255,255,0.2);"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" style="background: rgba(255,255,255,0.2);"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" style="background: rgba(255,255,255,0.2);"><i class="fab fa-github"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="team-member animate-on-scroll">
-                        <div class="team-image">
-                            <img src="images/team/cto.jpg" alt="Vasilios Chiliaridis">
+                    <div class="team-member card-3d animate-on-scroll">
+                        <div class="card-front">
+                            <div class="team-image">
+                                <img src="images/team/cto.jpg" alt="Vasilios Chiliaridis">
+                            </div>
+                            <div class="team-info">
+                                <h3>Vasilios Chiliaridis</h3>
+                                <span class="position">CTO & Lead Developer</span>
+                                <p>Vasilios brings technical excellence to every project as our CTO.</p>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="team-info">
-                            <h3>Vasilios Chiliaridis</h3>
-                            <span class="position">CTO & Lead Developer</span>
-                            <p>Vasilios brings technical excellence to every project as our CTO. His expertise in game engine technology and optimization ensures our games run beautifully across all platforms while pushing visual boundaries.</p>
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
+                        <div class="card-back">
+                            <div class="team-info" style="padding: 30px; height: 100%; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(135deg, var(--secondary-color), var(--tertiary-color)); color: white;">
+                                <h3>Vasilios Chiliaridis</h3>
+                                <span class="position" style="color: rgba(255,255,255,0.9);">CTO & Lead Developer</span>
+                                <p style="color: rgba(255,255,255,0.9);">His expertise in game engine technology and optimization ensures our games run beautifully across all platforms while pushing visual boundaries.</p>
+                                <p style="color: rgba(255,255,255,0.9);">Education: Computer Science PhD with focus on Graphics Rendering</p>
+                                <div class="team-social">
+                                    <a href="#" style="background: rgba(255,255,255,0.2);"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" style="background: rgba(255,255,255,0.2);"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" style="background: rgba(255,255,255,0.2);"><i class="fab fa-github"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -115,12 +149,12 @@
         <section class="awards-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>AWARDS & RECOGNITION</h2>
+                    <h2 class="text-3d-simple">AWARDS & RECOGNITION</h2>
                     <div class="section-separator"></div>
                 </div>
                 
                 <div class="awards-grid">
-                    <div class="award-item animate-on-scroll">
+                    <div class="award-item feature-card-3d animate-on-scroll">
                         <div class="award-icon">
                             <i class="fas fa-trophy"></i>
                         </div>
@@ -128,7 +162,7 @@
                         <p>Athens Games Festival 2024</p>
                     </div>
                     
-                    <div class="award-item animate-on-scroll">
+                    <div class="award-item feature-card-3d animate-on-scroll">
                         <div class="award-icon">
                             <i class="fas fa-medal"></i>
                         </div>
@@ -136,7 +170,7 @@
                         <p>European Indie Showcase 2024</p>
                     </div>
                     
-                    <div class="award-item animate-on-scroll">
+                    <div class="award-item feature-card-3d animate-on-scroll">
                         <div class="award-icon">
                             <i class="fas fa-thumbs-up"></i>
                         </div>
@@ -144,7 +178,7 @@
                         <p>Indie Dev Summit 2023</p>
                     </div>
                     
-                    <div class="award-item animate-on-scroll">
+                    <div class="award-item feature-card-3d animate-on-scroll">
                         <div class="award-icon">
                             <i class="fas fa-star"></i>
                         </div>
@@ -200,5 +234,6 @@
 
     <!-- JavaScript Files -->
     <script src="js/main.js"></script>
+    <script src="js/effects.js"></script>
 </body>
 </html>

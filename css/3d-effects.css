@@ -1,0 +1,391 @@
+/* 
+ * Project Allecc - 3D Effects
+ * Contains 3D effects for game elements
+ */
+
+/* ======== 3D Card Effects ======== */
+.card-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-3d .card-front,
+.card-3d .card-back {
+    backface-visibility: hidden;
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.card-3d .card-back {
+    transform: rotateY(180deg);
+}
+
+.card-3d:hover {
+    transform: rotateY(180deg);
+}
+
+/* ======== 3D Button Effects ======== */
+.btn-3d {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateZ(0);
+}
+
+.btn-3d::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: inherit;
+    transform: translateZ(-5px);
+    transition: transform 0.3s ease;
+}
+
+.btn-3d:hover {
+    transform: translateZ(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-3d:active {
+    transform: translateZ(2px);
+}
+
+/* ======== 3D Text Effects ======== */
+.text-3d {
+    text-shadow: 
+        0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0,0,0,.1),
+        0 0 5px rgba(0,0,0,.1),
+        0 1px 3px rgba(0,0,0,.3),
+        0 3px 5px rgba(0,0,0,.2),
+        0 5px 10px rgba(0,0,0,.25),
+        0 10px 10px rgba(0,0,0,.2),
+        0 20px 20px rgba(0,0,0,.15);
+}
+
+.text-3d-simple {
+    text-shadow: 
+        0 1px 0 var(--secondary-color),
+        0 2px 0 var(--primary-color),
+        0 3px 3px rgba(0,0,0,0.3);
+}
+
+/* ======== 3D Image Effects ======== */
+.image-3d-container {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.image-3d {
+    transition: transform 0.5s ease;
+    transform: rotateX(0) rotateY(0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-3d-container:hover .image-3d {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.image-3d-depth {
+    position: relative;
+}
+
+.image-3d-depth::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+    z-index: 1;
+}
+
+.image-3d-depth::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 5%;
+    width: 90%;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    filter: blur(10px);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* ======== 3D Game Card Effect ======== */
+.game-card-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.game-card-3d .game-image {
+    position: relative;
+    transform: translateZ(20px);
+    transition: transform 0.3s ease;
+}
+
+.game-card-3d .game-info {
+    transform: translateZ(10px);
+    transition: transform 0.3s ease;
+}
+
+.game-card-3d .game-tags {
+    transform: translateZ(30px);
+    transition: transform 0.3s ease;
+}
+
+.game-card-3d .btn {
+    transform: translateZ(40px);
+    transition: transform 0.3s ease;
+}
+
+.game-card-3d:hover .game-image {
+    transform: translateZ(30px);
+}
+
+.game-card-3d:hover .game-info {
+    transform: translateZ(20px);
+}
+
+.game-card-3d:hover .game-tags {
+    transform: translateZ(40px);
+}
+
+.game-card-3d:hover .btn {
+    transform: translateZ(50px);
+}
+
+/* ======== 3D Layered Background Effect ======== */
+.bg-3d-layers {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.bg-layer-1 {
+    opacity: 0.1;
+    z-index: 1;
+    transform: translateZ(-50px);
+}
+
+.bg-layer-2 {
+    opacity: 0.2;
+    z-index: 2;
+    transform: translateZ(-40px);
+}
+
+.bg-layer-3 {
+    opacity: 0.3;
+    z-index: 3;
+    transform: translateZ(-30px);
+}
+
+.bg-layer-4 {
+    opacity: 0.4;
+    z-index: 4;
+    transform: translateZ(-20px);
+}
+
+.bg-layer-5 {
+    opacity: 0.5;
+    z-index: 5;
+    transform: translateZ(-10px);
+}
+
+.bg-3d-layers:hover .bg-layer-1 {
+    transform: translateZ(-40px) translateX(-10px);
+}
+
+.bg-3d-layers:hover .bg-layer-2 {
+    transform: translateZ(-30px) translateX(-5px);
+}
+
+.bg-3d-layers:hover .bg-layer-3 {
+    transform: translateZ(-20px);
+}
+
+.bg-3d-layers:hover .bg-layer-4 {
+    transform: translateZ(-10px) translateX(5px);
+}
+
+.bg-3d-layers:hover .bg-layer-5 {
+    transform: translateZ(0) translateX(10px);
+}
+
+/* ======== 3D Game Logo Effect ======== */
+.game-logo-3d {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.game-logo-3d span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.game-logo-3d .logo-front {
+    color: var(--primary-color);
+    transform: translateZ(20px);
+}
+
+.game-logo-3d .logo-middle {
+    color: var(--secondary-color);
+    transform: translateZ(10px);
+    opacity: 0.8;
+}
+
+.game-logo-3d .logo-back {
+    color: var(--tertiary-color);
+    transform: translateZ(0);
+    opacity: 0.6;
+}
+
+.game-logo-3d:hover {
+    transform: rotateX(10deg) rotateY(10deg);
+}
+
+/* ======== 3D Game Feature Cards ======== */
+.feature-card-3d {
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card-3d::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(106, 13, 173, 0.2), rgba(48, 207, 208, 0.2));
+    transform: translateZ(-20px);
+    border-radius: inherit;
+}
+
+.feature-card-3d .feature-icon {
+    transform: translateZ(30px);
+    transition: transform 0.3s ease;
+}
+
+.feature-card-3d h4 {
+    transform: translateZ(20px);
+    transition: transform 0.3s ease;
+}
+
+.feature-card-3d p {
+    transform: translateZ(10px);
+    transition: transform 0.3s ease;
+}
+
+.feature-card-3d:hover {
+    transform: scale(1.05);
+}
+
+.feature-card-3d:hover .feature-icon {
+    transform: translateZ(40px) scale(1.1);
+}
+
+.feature-card-3d:hover h4 {
+    transform: translateZ(30px);
+}
+
+.feature-card-3d:hover p {
+    transform: translateZ(20px);
+}
+
+/* ======== Responsive Adjustments ======== */
+@media (max-width: 768px) {
+    /* Reduce 3D effects on mobile */
+    .feature-card-3d,
+    .feature-card-3d::before,
+    .feature-card-3d .feature-icon,
+    .feature-card-3d h4,
+    .feature-card-3d p,
+    .game-card-3d,
+    .game-card-3d .game-image,
+    .game-card-3d .game-info,
+    .game-card-3d .game-tags,
+    .game-card-3d .btn,
+    .card-3d,
+    .card-3d .card-front,
+    .card-3d .card-back,
+    .btn-3d,
+    .btn-3d::before,
+    .image-3d,
+    .game-logo-3d,
+    .game-logo-3d span {
+        transform: none !important;
+        transition: transform 0.3s ease;
+    }
+    
+    .feature-card-3d:hover,
+    .game-card-3d:hover .game-image,
+    .game-card-3d:hover .game-info,
+    .game-card-3d:hover .game-tags,
+    .game-card-3d:hover .btn,
+    .btn-3d:hover,
+    .image-3d-container:hover .image-3d,
+    .game-logo-3d:hover {
+        transform: translateY(-5px) !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .feature-card-3d,
+    .feature-card-3d::before,
+    .feature-card-3d .feature-icon,
+    .feature-card-3d h4,
+    .feature-card-3d p,
+    .game-card-3d,
+    .game-card-3d .game-image,
+    .game-card-3d .game-info,
+    .game-card-3d .game-tags,
+    .game-card-3d .btn,
+    .card-3d,
+    .card-3d .card-front,
+    .card-3d .card-back,
+    .btn-3d,
+    .btn-3d::before,
+    .image-3d,
+    .game-logo-3d,
+    .game-logo-3d span,
+    .bg-3d-layers .bg-layer {
+        transition: none !important;
+        transform: none !important;
+        animation: none !important;
+    }
+}

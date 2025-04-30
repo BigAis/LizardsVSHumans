@@ -9,6 +9,8 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/3d-effects.css">
 </head>
 <body>
     <header>
@@ -28,10 +30,12 @@
             </ul>
         </nav>
 
-        <div class="page-banner" style="background-image: url('images/contact-bg.jpg');">
+        <div class="page-banner bg-3d-layers" style="background-image: url('images/contact-bg.jpg');">
+            <div class="bg-layer bg-layer-1" style="background-image: url('images/contact-bg.jpg');"></div>
+            <div class="bg-layer bg-layer-2" style="background-image: url('images/contact-bg.jpg');"></div>
             <div class="banner-content">
-                <h1>CONTACT US</h1>
-                <div class="breadcrumb">
+                <h1 class="text-3d-simple fade-in-up">CONTACT US</h1>
+                <div class="breadcrumb fade-in-up delay-200">
                     <a href="index.html">Home</a>
                     <span>→</span>
                     <span>Contact</span>
@@ -44,12 +48,12 @@
         <section class="contact-container">
             <div class="container">
                 <div class="contact-wrapper">
-                    <div class="contact-info">
-                        <h2>Get In Touch</h2>
+                    <div class="contact-info fade-in-left">
+                        <h2 class="text-3d-simple">Get In Touch</h2>
                         <p>We'd love to hear from you! Whether you have questions about our games, need technical support, or want to explore business opportunities, our team is ready to assist you.</p>
                         
                         <div class="contact-methods">
-                            <div class="contact-item">
+                            <div class="contact-item feature-card-3d">
                                 <div class="contact-icon">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
@@ -59,7 +63,7 @@
                                 </div>
                             </div>
                             
-                            <div class="contact-item">
+                            <div class="contact-item feature-card-3d">
                                 <div class="contact-icon">
                                     <i class="fas fa-envelope"></i>
                                 </div>
@@ -70,7 +74,7 @@
                                 </div>
                             </div>
                             
-                            <div class="contact-item">
+                            <div class="contact-item feature-card-3d">
                                 <div class="contact-icon">
                                     <i class="fas fa-phone-alt"></i>
                                 </div>
@@ -81,7 +85,7 @@
                                 </div>
                             </div>
                             
-                            <div class="contact-item">
+                            <div class="contact-item feature-card-3d">
                                 <div class="contact-icon">
                                     <i class="fas fa-clock"></i>
                                 </div>
@@ -95,37 +99,37 @@
                         
                         <h3>Connect With Us</h3>
                         <div class="social-contact">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-discord"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="float-effect"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="float-effect"><i class="fab fa-discord"></i></a>
+                            <a href="#" class="float-effect"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="float-effect"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="float-effect"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="float-effect"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     
-                    <div class="contact-form">
-                        <h2>Send Us A Message</h2>
+                    <div class="contact-form fade-in-right">
+                        <h2 class="text-3d-simple">Send Us A Message</h2>
                         <form id="contactForm">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="name">Your Name</label>
-                                    <input type="text" id="name" name="name" required>
+                                    <input type="text" id="name" name="name" class="input-focus-effect" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Your Email</label>
-                                    <input type="email" id="email" name="email" required>
+                                    <input type="email" id="email" name="email" class="input-focus-effect" required>
                                 </div>
                             </div>
                             
                             <div class="form-group">
                                 <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" required>
+                                <input type="text" id="subject" name="subject" class="input-focus-effect" required>
                             </div>
                             
                             <div class="form-group">
                                 <label for="inquiry">Inquiry Type</label>
-                                <select id="inquiry" name="inquiry">
+                                <select id="inquiry" name="inquiry" class="input-focus-effect">
                                     <option value="general">General Information</option>
                                     <option value="support">Technical Support</option>
                                     <option value="feedback">Feedback & Suggestions</option>
@@ -137,7 +141,7 @@
                             
                             <div class="form-group">
                                 <label for="message">Your Message</label>
-                                <textarea id="message" name="message" required></textarea>
+                                <textarea id="message" name="message" class="input-focus-effect" required></textarea>
                             </div>
                             
                             <div class="form-check">
@@ -147,7 +151,7 @@
                                 </label>
                             </div>
                             
-                            <button type="submit" class="submit-btn">Send Message</button>
+                            <button type="submit" class="submit-btn btn-3d pulse-effect">Send Message</button>
                         </form>
                     </div>
                 </div>
@@ -157,12 +161,12 @@
         <section class="faq-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>FREQUENTLY ASKED QUESTIONS</h2>
+                    <h2 class="text-3d-simple">FREQUENTLY ASKED QUESTIONS</h2>
                     <div class="section-separator"></div>
                 </div>
                 
                 <div class="faq-grid">
-                    <div class="faq-item">
+                    <div class="faq-item feature-card-3d animate-on-scroll">
                         <div class="faq-question">
                             <h3>How can I report a bug in your games?</h3>
                             <div class="faq-icon">
@@ -174,7 +178,7 @@
                         </div>
                     </div>
                     
-                    <div class="faq-item">
+                    <div class="faq-item feature-card-3d animate-on-scroll">
                         <div class="faq-question">
                             <h3>Do you offer game testing opportunities?</h3>
                             <div class="faq-icon">
@@ -186,7 +190,7 @@
                         </div>
                     </div>
                     
-                    <div class="faq-item">
+                    <div class="faq-item feature-card-3d animate-on-scroll">
                         <div class="faq-question">
                             <h3>What platforms do your games support?</h3>
                             <div class="faq-icon">
@@ -198,7 +202,7 @@
                         </div>
                     </div>
                     
-                    <div class="faq-item">
+                    <div class="faq-item feature-card-3d animate-on-scroll">
                         <div class="faq-question">
                             <h3>How can I apply for a job at Project Allecc?</h3>
                             <div class="faq-icon">
@@ -210,7 +214,7 @@
                         </div>
                     </div>
                     
-                    <div class="faq-item">
+                    <div class="faq-item feature-card-3d animate-on-scroll">
                         <div class="faq-question">
                             <h3>Do you offer internships or student programs?</h3>
                             <div class="faq-icon">
@@ -222,7 +226,7 @@
                         </div>
                     </div>
                     
-                    <div class="faq-item">
+                    <div class="faq-item feature-card-3d animate-on-scroll">
                         <div class="faq-question">
                             <h3>Can I use your games for content creation?</h3>
                             <div class="faq-icon">
@@ -280,8 +284,23 @@
         </div>
     </footer>
 
+    <!-- Add this style for input focus effects -->
+    <style>
+        .input-focus-effect {
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+        
+        .input-focus-effect:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(106, 13, 173, 0.2);
+            transform: translateY(-2px);
+        }
+    </style>
+
     <!-- JavaScript Files -->
     <script src="js/main.js"></script>
     <script src="js/contact.js"></script>
+    <script src="js/effects.js"></script>
 </body>
 </html>

@@ -9,6 +9,8 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/games.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/3d-effects.css">
 </head>
 <body>
     <header>
@@ -28,10 +30,13 @@
             </ul>
         </nav>
 
-        <div class="page-banner" style="background-image: url('images/games-bg.jpg');">
+        <div class="page-banner bg-3d-layers" style="background-image: url('images/games-bg.jpg');">
+            <div class="bg-layer bg-layer-1" style="background-image: url('images/games-bg.jpg');"></div>
+            <div class="bg-layer bg-layer-2" style="background-image: url('images/games-bg.jpg');"></div>
+            <div class="bg-layer bg-layer-3" style="background-image: url('images/games-bg.jpg');"></div>
             <div class="banner-content">
-                <h1>OUR GAMES</h1>
-                <div class="breadcrumb">
+                <h1 class="text-3d-simple fade-in-up">OUR GAMES</h1>
+                <div class="breadcrumb fade-in-up delay-200">
                     <a href="index.html">Home</a>
                     <span>→</span>
                     <span>Games</span>
@@ -43,16 +48,16 @@
     <main>
         <section class="games-container">
             <div class="container">
-                <div class="filter-bar">
+                <div class="filter-bar fade-in-up">
                     <div class="filter-categories">
-                        <button class="filter-button active">All</button>
-                        <button class="filter-button">Released</button>
-                        <button class="filter-button">Early Access</button>
-                        <button class="filter-button">Upcoming</button>
-                        <button class="filter-button">FPS</button>
-                        <button class="filter-button">TPS</button>
-                        <button class="filter-button">Racing</button>
-                        <button class="filter-button">RPG</button>
+                        <button class="filter-button active btn-3d">All</button>
+                        <button class="filter-button btn-3d">Released</button>
+                        <button class="filter-button btn-3d">Early Access</button>
+                        <button class="filter-button btn-3d">Upcoming</button>
+                        <button class="filter-button btn-3d">FPS</button>
+                        <button class="filter-button btn-3d">TPS</button>
+                        <button class="filter-button btn-3d">Racing</button>
+                        <button class="filter-button btn-3d">RPG</button>
                     </div>
                     <div class="search-input">
                         <input type="text" placeholder="Search games...">
@@ -61,7 +66,7 @@
                 </div>
                 
                 <div class="games-grid">
-                    <div class="game-card animate-on-scroll">
+                    <div class="game-card game-card-3d animate-on-scroll">
                         <div class="game-image">
                             <img src="images/game-banners/lizards-vs-humans-banner.jpg" alt="Lizards VS Humans">
                             <div class="game-badge badge-released">Released</div>
@@ -75,7 +80,7 @@
                                 <span>Multiplayer</span>
                             </div>
                             <p>An intense multiplayer shooter where two species battle for dominance. Choose your side in this epic conflict between advanced reptilians and resourceful humans.</p>
-                            <a href="lizards-vs-humans.html" class="btn btn-primary">Learn More</a>
+                            <a href="lizards-vs-humans.html" class="btn btn-primary pulse-effect">Learn More</a>
                             <div class="game-stats">
                                 <div class="stat-item">
                                     <i class="fas fa-calendar"></i>
@@ -93,7 +98,7 @@
                         </div>
                     </div>
                     
-                    <div class="game-card animate-on-scroll">
+                    <div class="game-card game-card-3d animate-on-scroll">
                         <div class="game-image">
                             <img src="images/game-banners/quantum-drift-banner.jpg" alt="Quantum Drift">
                             <div class="game-badge badge-upcoming">Upcoming</div>
@@ -124,7 +129,7 @@
                         </div>
                     </div>
                     
-                    <div class="game-card animate-on-scroll">
+                    <div class="game-card game-card-3d animate-on-scroll">
                         <div class="game-image">
                             <img src="images/game-banners/neon-shadows-banner.jpg" alt="Neon Shadows">
                             <div class="game-badge badge-upcoming">Upcoming</div>
@@ -155,7 +160,7 @@
                         </div>
                     </div>
                     
-                    <div class="game-card animate-on-scroll">
+                    <div class="game-card game-card-3d animate-on-scroll">
                         <div class="game-image">
                             <img src="images/game-banners/echoes-of-atlantis-banner.jpg" alt="Echoes of Atlantis">
                             <div class="game-badge badge-early-access">Early Access</div>
@@ -187,7 +192,7 @@
                     </div>
                 </div>
                 
-                <div class="page-navigation">
+                <div class="page-navigation fade-in-up">
                     <a href="#" class="page-link"><i class="fas fa-angle-left"></i></a>
                     <a href="#" class="page-link active">1</a>
                     <a href="#" class="page-link">2</a>
@@ -198,7 +203,7 @@
         </section>
         
         <div class="section-divider" style="background-image: url('images/roadmap-bg.jpg');">
-            <h2>GAME DEVELOPMENT ROADMAP</h2>
+            <h2 class="text-3d fade-in">GAME DEVELOPMENT ROADMAP</h2>
         </div>
         
         <section class="upcoming-section">
@@ -211,7 +216,7 @@
                 
                 <div class="timeline">
                     <div class="timeline-item animate-on-scroll">
-                        <div class="timeline-content">
+                        <div class="timeline-content feature-card-3d">
                             <h3>Lizards VS Humans: Season 2</h3>
                             <div class="timeline-date">Q3 2025</div>
                             <p>The second season brings new maps, weapons, character classes, and a revolutionary progression system that evolves based on your playstyle.</p>
@@ -219,7 +224,7 @@
                     </div>
                     
                     <div class="timeline-item animate-on-scroll">
-                        <div class="timeline-content">
+                        <div class="timeline-content feature-card-3d">
                             <h3>Echoes of Atlantis</h3>
                             <div class="timeline-date">Q2 2025 (Early Access)</div>
                             <p>Dive into the depths to explore a mysterious underwater civilization with ancient technology and dark secrets.</p>
@@ -227,7 +232,7 @@
                     </div>
                     
                     <div class="timeline-item animate-on-scroll">
-                        <div class="timeline-content">
+                        <div class="timeline-content feature-card-3d">
                             <h3>Neon Shadows</h3>
                             <div class="timeline-date">Q4 2025</div>
                             <p>Infiltrate corporate networks as a digital ghost in this stealth-based RPG set in a cyberpunk future.</p>
@@ -235,7 +240,7 @@
                     </div>
                     
                     <div class="timeline-item animate-on-scroll">
-                        <div class="timeline-content">
+                        <div class="timeline-content feature-card-3d">
                             <h3>Quantum Drift</h3>
                             <div class="timeline-date">Q1 2026</div>
                             <p>Race through a cyberpunk cityscape with the ability to manipulate time to gain the advantage over your competitors.</p>
@@ -243,7 +248,7 @@
                     </div>
                     
                     <div class="timeline-item animate-on-scroll">
-                        <div class="timeline-content">
+                        <div class="timeline-content feature-card-3d">
                             <h3>Untitled Fantasy Project</h3>
                             <div class="timeline-date">2026-2027</div>
                             <p>A secret project that will take players to a realm where magic and technology coexist in delicate balance.</p>
@@ -299,5 +304,6 @@
     <!-- JavaScript Files -->
     <script src="js/main.js"></script>
     <script src="js/games.js"></script>
+    <script src="js/effects.js"></script>
 </body>
 </html>

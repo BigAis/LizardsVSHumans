@@ -9,6 +9,7 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
     <header>
@@ -30,10 +31,10 @@
 
         <div class="hero" style="background-image: url('images/hero-bg.jpg');">
             <div class="hero-content">
-                <h1>WHERE IMAGINATION MEETS GAMEPLAY</h1>
-                <p>Indie games crafted with passion and innovation</p>
-                <div class="hero-buttons">
-                    <a href="games.html" class="btn btn-primary">Explore Our Games</a>
+                <h1 class="fade-in-down">WHERE IMAGINATION MEETS GAMEPLAY</h1>
+                <p class="fade-in-up delay-300">Indie games crafted with passion and innovation</p>
+                <div class="hero-buttons fade-in-up delay-500">
+                    <a href="games.html" class="btn btn-primary pulse-effect">Explore Our Games</a>
                     <a href="about.html" class="btn btn-secondary">About Us</a>
                 </div>
             </div>
@@ -143,7 +144,7 @@
 
         <section class="newsletter">
             <div class="container">
-                <div class="newsletter-content">
+                <div class="newsletter-content fade-in-up">
                     <h2>JOIN OUR NEWSLETTER</h2>
                     <p>Stay updated with the latest news, game releases, and exclusive content</p>
                     <form class="newsletter-form">
@@ -199,5 +200,6 @@
 
     <!-- JavaScript Files -->
     <script src="js/main.js"></script>
+    <script src="js/effects.js"></script>
 </body>
 </html>

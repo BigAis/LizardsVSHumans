@@ -9,6 +9,8 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/game-detail.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/3d-effects.css">
 </head>
 <body>
     <header>
@@ -28,26 +30,32 @@
             </ul>
         </nav>
 
-        <div class="game-banner" style="background-image: url('images/game-banners/lizards-vs-humans-banner.jpg');">
+        <div class="game-banner bg-3d-layers" style="background-image: url('images/game-banners/lizards-vs-humans-banner.jpg');">
+            <div class="bg-layer bg-layer-1" style="background-image: url('images/game-banners/lizards-vs-humans-banner.jpg');"></div>
+            <div class="bg-layer bg-layer-2" style="background-image: url('images/game-banners/lizards-vs-humans-banner.jpg');"></div>
             <div class="game-banner-content">
                 <div class="container">
-                    <div class="breadcrumb">
+                    <div class="breadcrumb fade-in-up">
                         <a href="index.html">Home</a>
                         <span>→</span>
                         <a href="games.html">Games</a>
                         <span>→</span>
                         <span>Lizards VS Humans</span>
                     </div>
-                    <h1>LIZARDS VS HUMANS</h1>
-                    <div class="game-details">
+                    <h1 class="game-logo-3d fade-in-up">
+                        <span class="logo-back">LIZARDS VS HUMANS</span>
+                        <span class="logo-middle">LIZARDS VS HUMANS</span>
+                        <span class="logo-front">LIZARDS VS HUMANS</span>
+                    </h1>
+                    <div class="game-details fade-in-up delay-200">
                         <span><i class="fas fa-gamepad"></i> FPS/TPS Shooter</span>
                         <span><i class="fas fa-users"></i> Multiplayer</span>
                         <span><i class="fas fa-rocket"></i> Sci-Fi</span>
                         <span><i class="fas fa-calendar"></i> Released: March 2024</span>
                     </div>
-                    <div class="banner-buttons">
-                        <a href="#" class="btn btn-primary">Play Now</a>
-                        <a href="#" class="btn btn-secondary">Watch Trailer</a>
+                    <div class="banner-buttons fade-in-up delay-300">
+                        <a href="#" class="btn btn-primary btn-3d pulse-effect">Play Now</a>
+                        <a href="#" class="btn btn-secondary btn-3d">Watch Trailer</a>
                     </div>
                 </div>
             </div>
@@ -59,43 +67,43 @@
             <div class="container">
                 <div class="info-wrapper">
                     <div class="main-content">
-                        <div class="game-tabs">
-                            <div class="tab-button" data-target="#overview">Overview</div>
+                        <div class="game-tabs fade-in-up">
+                            <div class="tab-button active" data-target="#overview">Overview</div>
                             <div class="tab-button" data-target="#features">Features</div>
                             <div class="tab-button" data-target="#media">Media</div>
                             <div class="tab-button" data-target="#system-req">System Requirements</div>
                         </div>
                         
-                        <div class="tab-content" id="overview">
-                            <p>Lizards VS Humans is a fast-paced multiplayer shooter set in a distant future where advanced reptilian beings have made contact with Earth. Choose your side in this intense conflict that will determine the fate of both species.</p>
-                            <p>The year is 2185. After centuries of secret observation, an advanced reptilian civilization has finally revealed themselves to humanity. What began as a peaceful exchange of knowledge quickly descended into conflict as fundamental differences in ideology and resources led to rising tensions.</p>
+                        <div class="tab-content active" id="overview">
+                            <p class="fade-in-up">Lizards VS Humans is a fast-paced multiplayer shooter set in a distant future where advanced reptilian beings have made contact with Earth. Choose your side in this intense conflict that will determine the fate of both species.</p>
+                            <p class="fade-in-up delay-100">The year is 2185. After centuries of secret observation, an advanced reptilian civilization has finally revealed themselves to humanity. What began as a peaceful exchange of knowledge quickly descended into conflict as fundamental differences in ideology and resources led to rising tensions.</p>
                             
                             <div class="game-media">
-                                <div class="media-item">
+                                <div class="media-item image-3d-depth">
                                     <img src="images/game-screenshots/lvh-screenshot1.jpg" alt="Lizards VS Humans Screenshot 1">
                                 </div>
-                                <div class="media-item">
+                                <div class="media-item image-3d-depth">
                                     <img src="images/game-screenshots/lvh-screenshot2.jpg" alt="Lizards VS Humans Screenshot 2">
                                 </div>
                             </div>
                             
-                            <h3>Two Distinct Factions</h3>
-                            <p>Play as either Humans or Lizards, each with unique abilities, weapons, and playstyles:</p>
-                            <ul>
+                            <h3 class="text-3d-simple fade-in-up">Two Distinct Factions</h3>
+                            <p class="fade-in-up delay-100">Play as either Humans or Lizards, each with unique abilities, weapons, and playstyles:</p>
+                            <ul class="fade-in-up delay-200">
                                 <li><strong>Humans:</strong> Resourceful and adaptable, human fighters rely on cutting-edge technology, tactical planning, and teamwork to overcome their physically superior opponents.</li>
                                 <li><strong>Lizards:</strong> Naturally agile and powerful, the reptilian warriors possess enhanced physical abilities, regenerative capabilities, and ancient technologies far beyond human understanding.</li>
                             </ul>
                             
-                            <h3>Dynamic Combat System</h3>
-                            <p>Experience warfare like never before with our hybrid FPS/TPS combat system that allows players to seamlessly switch between perspectives based on their tactical needs. Master advanced movement mechanics including wall-running, jetpack boosts, and teleportation gates.</p>
+                            <h3 class="text-3d-simple fade-in-up">Dynamic Combat System</h3>
+                            <p class="fade-in-up delay-100">Experience warfare like never before with our hybrid FPS/TPS combat system that allows players to seamlessly switch between perspectives based on their tactical needs. Master advanced movement mechanics including wall-running, jetpack boosts, and teleportation gates.</p>
                             
-                            <h3>Evolving Narrative</h3>
-                            <p>The conflict between Lizards and Humans isn't just about gameplay—it's a living story that evolves based on community activities and seasonal events. Your actions in-game contribute to the overarching narrative, potentially changing the course of this interspecies war.</p>
+                            <h3 class="text-3d-simple fade-in-up">Evolving Narrative</h3>
+                            <p class="fade-in-up delay-100">The conflict between Lizards and Humans isn't just about gameplay—it's a living story that evolves based on community activities and seasonal events. Your actions in-game contribute to the overarching narrative, potentially changing the course of this interspecies war.</p>
                         </div>
                         
                         <div class="tab-content" id="features">
                             <div class="game-features">
-                                <div class="feature-item">
+                                <div class="feature-item feature-card-3d fade-in-up">
                                     <div class="feature-icon">
                                         <i class="fas fa-globe"></i>
                                     </div>
@@ -105,7 +113,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="feature-item">
+                                <div class="feature-item feature-card-3d fade-in-up delay-100">
                                     <div class="feature-icon">
                                         <i class="fas fa-crosshairs"></i>
                                     </div>
@@ -115,7 +123,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="feature-item">
+                                <div class="feature-item feature-card-3d fade-in-up delay-200">
                                     <div class="feature-icon">
                                         <i class="fas fa-users"></i>
                                     </div>
@@ -125,7 +133,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="feature-item">
+                                <div class="feature-item feature-card-3d fade-in-up delay-300">
                                     <div class="feature-icon">
                                         <i class="fas fa-chart-line"></i>
                                     </div>
@@ -135,7 +143,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="feature-item">
+                                <div class="feature-item feature-card-3d fade-in-up delay-400">
                                     <div class="feature-icon">
                                         <i class="fas fa-cogs"></i>
                                     </div>
@@ -148,36 +156,36 @@
                         </div>
                         
                         <div class="tab-content" id="media">
-                            <h3>Screenshots</h3>
+                            <h3 class="text-3d-simple fade-in-up">Screenshots</h3>
                             <div class="game-media">
-                                <div class="media-item">
+                                <div class="media-item image-3d-depth fade-in-up">
                                     <img src="images/game-screenshots/lvh-screenshot1.jpg" alt="Lizards VS Humans Screenshot 1">
                                 </div>
-                                <div class="media-item">
+                                <div class="media-item image-3d-depth fade-in-up delay-100">
                                     <img src="images/game-screenshots/lvh-screenshot2.jpg" alt="Lizards VS Humans Screenshot 2">
                                 </div>
-                                <div class="media-item">
+                                <div class="media-item image-3d-depth fade-in-up delay-200">
                                     <img src="images/game-screenshots/lvh-screenshot3.jpg" alt="Lizards VS Humans Screenshot 3">
                                 </div>
-                                <div class="media-item">
+                                <div class="media-item image-3d-depth fade-in-up delay-300">
                                     <img src="images/game-screenshots/lvh-screenshot4.jpg" alt="Lizards VS Humans Screenshot 4">
                                 </div>
                             </div>
                             
-                            <h3>Videos</h3>
+                            <h3 class="text-3d-simple fade-in-up">Videos</h3>
                             <div class="game-media">
-                                <div class="media-item">
+                                <div class="media-item image-3d-depth fade-in-up">
                                     <img src="images/game-screenshots/lvh-video-thumbnail1.jpg" alt="Gameplay Trailer">
                                 </div>
-                                <div class="media-item">
+                                <div class="media-item image-3d-depth fade-in-up delay-100">
                                     <img src="images/game-screenshots/lvh-video-thumbnail2.jpg" alt="Dev Diary">
                                 </div>
                             </div>
                         </div>
                         
                         <div class="tab-content" id="system-req">
-                            <h3>Minimum Requirements</h3>
-                            <ul>
+                            <h3 class="text-3d-simple fade-in-up">Minimum Requirements</h3>
+                            <ul class="fade-in-up delay-100">
                                 <li><strong>OS:</strong> Windows 10 64-bit</li>
                                 <li><strong>Processor:</strong> Intel Core i5-6600K / AMD Ryzen 3 1300X</li>
                                 <li><strong>Memory:</strong> 8 GB RAM</li>
@@ -186,8 +194,8 @@
                                 <li><strong>Network:</strong> Broadband Internet connection</li>
                             </ul>
                             
-                            <h3>Recommended Requirements</h3>
-                            <ul>
+                            <h3 class="text-3d-simple fade-in-up">Recommended Requirements</h3>
+                            <ul class="fade-in-up delay-100">
                                 <li><strong>OS:</strong> Windows 10/11 64-bit</li>
                                 <li><strong>Processor:</strong> Intel Core i7-8700K / AMD Ryzen 5 3600X</li>
                                 <li><strong>Memory:</strong> 16 GB RAM</li>
@@ -199,7 +207,7 @@
                     </div>
                     
                     <div class="game-sidebar">
-                        <div class="sidebar-box">
+                        <div class="sidebar-box fade-in-right">
                             <div class="box-header">
                                 <h3>Game Details</h3>
                             </div>
@@ -233,15 +241,15 @@
                             </div>
                         </div>
                         
-                        <div class="sidebar-box download-box">
+                        <div class="sidebar-box download-box fade-in-right delay-200">
                             <div class="box-header">
                                 <h3>Get The Game</h3>
                             </div>
                             <div class="box-content">
-                                <a href="#" class="btn btn-primary">Steam</a>
-                                <a href="#" class="btn btn-primary">Epic Games</a>
-                                <a href="#" class="btn btn-primary">Xbox</a>
-                                <a href="#" class="btn btn-primary">PlayStation</a>
+                                <a href="#" class="btn btn-primary btn-3d">Steam</a>
+                                <a href="#" class="btn btn-primary btn-3d">Epic Games</a>
+                                <a href="#" class="btn btn-primary btn-3d">Xbox</a>
+                                <a href="#" class="btn btn-primary btn-3d">PlayStation</a>
                                 <p>Current Version: 1.2.5</p>
                             </div>
                         </div>
@@ -253,12 +261,12 @@
         <section class="related-games">
             <div class="container">
                 <div class="section-header">
-                    <h2>UPCOMING PROJECTS</h2>
+                    <h2 class="text-3d-simple">UPCOMING PROJECTS</h2>
                     <div class="section-separator"></div>
                 </div>
                 
                 <div class="related-grid">
-                    <div class="related-card animate-on-scroll">
+                    <div class="related-card game-card-3d animate-on-scroll">
                         <div class="related-image">
                             <img src="images/game-banners/quantum-drift-banner.jpg" alt="Upcoming Game 1">
                         </div>
@@ -269,7 +277,7 @@
                         </div>
                     </div>
                     
-                    <div class="related-card animate-on-scroll">
+                    <div class="related-card game-card-3d animate-on-scroll">
                         <div class="related-image">
                             <img src="images/game-banners/echoes-of-atlantis-banner.jpg" alt="Upcoming Game 2">
                         </div>
@@ -280,7 +288,7 @@
                         </div>
                     </div>
                     
-                    <div class="related-card animate-on-scroll">
+                    <div class="related-card game-card-3d animate-on-scroll">
                         <div class="related-image">
                             <img src="images/game-banners/neon-shadows-banner.jpg" alt="Upcoming Game 3">
                         </div>
@@ -340,5 +348,6 @@
     <!-- JavaScript Files -->
     <script src="js/main.js"></script>
     <script src="js/game-detail.js"></script>
+    <script src="js/effects.js"></script>
 </body>
 </html>

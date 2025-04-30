@@ -9,6 +9,8 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/documentation.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/3d-effects.css">
 </head>
 <body>
     <header>
@@ -28,10 +30,12 @@
             </ul>
         </nav>
 
-        <div class="page-banner" style="background-image: url('images/documentation-bg.jpg');">
+        <div class="page-banner bg-3d-layers" style="background-image: url('images/documentation-bg.jpg');">
+            <div class="bg-layer bg-layer-1" style="background-image: url('images/documentation-bg.jpg');"></div>
+            <div class="bg-layer bg-layer-2" style="background-image: url('images/documentation-bg.jpg');"></div>
             <div class="banner-content">
-                <h1>DOCUMENTATION</h1>
-                <div class="breadcrumb">
+                <h1 class="text-3d-simple fade-in-up">DOCUMENTATION</h1>
+                <div class="breadcrumb fade-in-up delay-200">
                     <a href="index.html">Home</a>
                     <span>→</span>
                     <span>Documentation</span>
@@ -44,14 +48,14 @@
         <section class="docs-container">
             <div class="container">
                 <div class="docs-wrapper">
-                    <div class="docs-sidebar">
+                    <div class="docs-sidebar fade-in-left">
                         <div class="search-box">
                             <input type="text" placeholder="Search documentation...">
                         </div>
                         
                         <div class="docs-menu">
                             <div class="docs-menu-header">
-                                <h3>Lizards VS Humans</h3>
+                                <h3 class="float-effect">Lizards VS Humans</h3>
                             </div>
                             <div class="docs-menu-content">
                                 <ul>
@@ -102,16 +106,16 @@
                         </div>
                     </div>
                     
-                    <div class="docs-content">
+                    <div class="docs-content fade-in-right">
                         <div class="docs-section" id="installation">
-                            <h2>Installation Guide</h2>
+                            <h2 class="text-3d-simple">Installation Guide</h2>
                             <p>Welcome to Lizards VS Humans! This guide will walk you through the installation process step by step.</p>
                             
                             <h3>Digital Platforms</h3>
                             <p>Lizards VS Humans is available on various digital platforms. Follow the platform-specific instructions below:</p>
                             
                             <h4>Steam</h4>
-                            <ol>
+                            <ol class="fade-in-up">
                                 <li>Open the Steam client and log in to your account</li>
                                 <li>Search for "Lizards VS Humans" in the store</li>
                                 <li>Purchase the game or claim it if it's already in your library</li>
@@ -120,7 +124,7 @@
                             </ol>
                             
                             <h4>Epic Games Store</h4>
-                            <ol>
+                            <ol class="fade-in-up delay-100">
                                 <li>Open the Epic Games launcher and log in to your account</li>
                                 <li>Search for "Lizards VS Humans" in the store</li>
                                 <li>Purchase the game or claim it if it's already in your library</li>
@@ -129,7 +133,7 @@
                             </ol>
                             
                             <h4>Xbox</h4>
-                            <ol>
+                            <ol class="fade-in-up delay-200">
                                 <li>Turn on your Xbox console and navigate to the Store</li>
                                 <li>Search for "Lizards VS Humans"</li>
                                 <li>Purchase the game or download it if you already own it</li>
@@ -138,7 +142,7 @@
                             </ol>
                             
                             <h4>PlayStation</h4>
-                            <ol>
+                            <ol class="fade-in-up delay-300">
                                 <li>Turn on your PlayStation console and navigate to the PlayStation Store</li>
                                 <li>Search for "Lizards VS Humans"</li>
                                 <li>Purchase the game or download it if you already own it</li>
@@ -146,17 +150,17 @@
                                 <li>You can monitor the download progress from the "Downloads" section</li>
                             </ol>
                             
-                            <div class="note">
+                            <div class="note pulse-effect">
                                 <strong>Note:</strong> The game requires approximately 50GB of free space. Make sure you have sufficient storage available before starting the installation.
                             </div>
                         </div>
                         
                         <div class="docs-section" id="system-requirements">
-                            <h2>System Requirements</h2>
+                            <h2 class="text-3d-simple">System Requirements</h2>
                             <p>To ensure a smooth gaming experience, make sure your system meets the following requirements:</p>
                             
                             <h3>Minimum Requirements</h3>
-                            <table>
+                            <table class="fade-in-up">
                                 <tr>
                                     <th>Component</th>
                                     <th>Requirement</th>
@@ -188,7 +192,7 @@
                             </table>
                             
                             <h3>Recommended Requirements</h3>
-                            <table>
+                            <table class="fade-in-up delay-100">
                                 <tr>
                                     <th>Component</th>
                                     <th>Requirement</th>
@@ -220,8 +224,7 @@
                             </table>
                             
                             <h3>Console Requirements</h3>
-                            <p>Lizards VS Humans is optimized to run on the following console platforms:</p>
-                            <ul>
+                            <ul class="fade-in-up delay-200">
                                 <li>PlayStation 5</li>
                                 <li>PlayStation 4 Pro</li>
                                 <li>PlayStation 4 (limited features)</li>
@@ -230,17 +233,17 @@
                                 <li>Xbox One (limited features)</li>
                             </ul>
                             
-                            <div class="warning">
+                            <div class="warning pulse-effect">
                                 <strong>Warning:</strong> Running the game on hardware below the minimum requirements may result in poor performance, visual glitches, or crashes.
                             </div>
                         </div>
                         
                         <div class="docs-section" id="basic-controls">
-                            <h2>Basic Controls</h2>
+                            <h2 class="text-3d-simple">Basic Controls</h2>
                             <p>Master the controls to gain an edge in combat. Below are the default control schemes for both keyboard/mouse and controllers.</p>
                             
                             <h3>Keyboard & Mouse Controls</h3>
-                            <table>
+                            <table class="fade-in-up">
                                 <tr>
                                     <th>Action</th>
                                     <th>Key/Button</th>
@@ -340,7 +343,7 @@
                             </table>
                             
                             <h3>Controller Layout (Default)</h3>
-                            <table>
+                            <table class="fade-in-up delay-100">
                                 <tr>
                                     <th>Action</th>
                                     <th>Button</th>
@@ -415,7 +418,7 @@
                                 </tr>
                             </table>
                             
-                            <div class="note">
+                            <div class="note pulse-effect">
                                 <strong>Note:</strong> You can customize all controls in the Settings menu under "Controls & Keybinds."
                             </div>
 
@@ -423,7 +426,7 @@
                             <p>Mastering these advanced movements can give you a significant advantage in combat:</p>
                             
                             <h4>Wall Running</h4>
-                            <ol>
+                            <ol class="fade-in-up">
                                 <li>Approach a wall at an angle while sprinting</li>
                                 <li>Jump toward the wall and hold forward</li>
                                 <li>Your character will automatically begin wall running</li>
@@ -431,19 +434,19 @@
                             </ol>
                             
                             <h4>Slide</h4>
-                            <ol>
+                            <ol class="fade-in-up delay-100">
                                 <li>While sprinting, press the crouch button</li>
                                 <li>Your character will slide in the direction you're moving</li>
                                 <li>You can shoot during the slide</li>
                                 <li>Jump at the end of a slide for extra momentum</li>
                             </ol>
                             
-                            <div class="code-block">
+                            <div class="code-block pulse-effect">
                                 TIP: Humans have a longer slide duration, while Lizards have faster slide speed.
                             </div>
                             
                             <h4>Ledge Grab</h4>
-                            <ol>
+                            <ol class="fade-in-up delay-200">
                                 <li>Jump towards a ledge or edge</li>
                                 <li>Your character will automatically grab it if within range</li>
                                 <li>Press jump again to climb up</li>
@@ -501,5 +504,6 @@
     <!-- JavaScript Files -->
     <script src="js/main.js"></script>
     <script src="js/documentation.js"></script>
+    <script src="js/effects.js"></script>
 </body>
 </html>
