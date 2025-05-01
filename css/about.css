@@ -41,6 +41,7 @@
     font-size: 1.1rem;
 }
 
+
 /* ======== Team Section ======== */
 .team-section {
     padding: 100px 0;
@@ -58,13 +59,12 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    text-align: center;
     transition: var(--transition);
 }
 
 .team-member:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .team-image {
@@ -107,7 +107,6 @@
 
 .team-social {
     display: flex;
-    justify-content: center;
     gap: 15px;
 }
 
@@ -126,6 +125,21 @@
 .team-social a:hover {
     background-color: var(--primary-color);
     color: white;
+    transform: translateY(-5px);
+}
+
+/* ======== Responsive Styles ======== */
+@media (max-width: 1024px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ======== Awards Section ======== */
